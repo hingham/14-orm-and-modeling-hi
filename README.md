@@ -1,46 +1,78 @@
+
+#### Links
+Repo: https://github.com/hingham/13-rest-server-hi
+
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## Project Name: LAB 14 Data Modeling and API server
 
-### Author: Student/Group Name
+### Author: Hannah Ingham
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
+* [repo]
+* [travis]
 * [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+
 
 #### Documentation
 * [swagger](http://xyz.com) (API assignments only)
 * [jsdoc](http://xyz.com) (All assignments)
 
 ### Modules
-#### `modulename.js`
-##### Exported Values and Methods
+#### categories-schema.js
+#### product-schema.js
+#### data-model.js
+#### products.js --extends dataModel
+#### categories.js --extends dataModel
 
-###### `foo(thing) -> string`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-Usage Notes or examples
 
 ### Setup
 #### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `PORT` - running on 3000
+* `MONGODB_URI` - localhost:27017/products
 
 #### Running the app
 * `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
-  
-#### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* Endpoint:  `api/v1/products` 
+  * Returns a JSON object with name, description, display, inside
+* Endpoint: `api/v1/categories`
+  * eturns a JSON object with name, description, display, and category inside
 
-#### UML
-Link to an image of the UML for your application and response to events
+Commands for the command line: 
+Post: echo '{
+	"name" : "a",
+	"color" : "b",
+}' | http post :3000/api/v1/{route}
+
+put: echo '{
+	"category" : "a",
+	"color" : "my put",
+}' | http put :3000/api/v1/{route}/{id}
+
+get: http :3000/api/v1/{route}/{id}
+
+delete: http :3000/api/v1/{route}/{id}
+
+Running Mongo:
+* start mongodb path path/to/database
+* start mongod in another window
+* show dbs
+* run: db.products.find().pretty(); to print all items in db
+
+#### Tests
+* How do you run tests? 
+* * npm run tests
+* What assertions were made?
+* * Asserts that sanitize work correctly
+* * Asserts that post, get, put and delete work correctly for /categories
+* What assertions need to be / should be made?
+* * Assertions need to be made for the /products route to check categories 
+
+#### Links
+Repo: https://github.com/hingham/13-rest-server-hi
+
+[![Build Status](https://www.travis-ci.com/hingham/13-rest-server.svg?branch=master)](https://www.travis-ci.com/hingham/13-rest-server)
+
+Travis link: https://www.travis-ci.com/hingham/13-rest-server
+
