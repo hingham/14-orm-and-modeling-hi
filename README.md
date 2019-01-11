@@ -12,8 +12,7 @@ Repo: https://github.com/hingham/13-rest-server-hi
 ### Links and Resources
 * [repo]
 * [travis]
-* [back-end](http://xyz.com) (when applicable)
-
+* [back-end]https://dashboard.heroku.com/apps/api-hannah/resources
 
 #### Documentation
 * [swagger](http://xyz.com) (API assignments only)
@@ -25,7 +24,6 @@ Repo: https://github.com/hingham/13-rest-server-hi
 #### data-model.js
 #### products.js --extends dataModel
 #### categories.js --extends dataModel
-
 
 ### Setup
 #### `.env` requirements
