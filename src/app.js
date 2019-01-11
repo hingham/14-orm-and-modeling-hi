@@ -11,7 +11,8 @@ const notFound = require( './middleware/404.js' );
 const apiRouter = require( './api/v1.js' );
 
 //dirname gives you a file that gives a file path relative to where you are
-app.use(express.static('doc') ); 
+app.use(express.static('doc'))
+
 
 // Prepare the express app
 const app = express();
