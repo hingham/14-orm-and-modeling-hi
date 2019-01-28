@@ -7,8 +7,8 @@ const swaggerUI = require('swagger-ui-express');
 router.param('model', modelFinder);
 
 
-const swaggerDocs = require('../doc/swagger.json');
-router.use('/api/v1/:model/:id', swaggerUI.server, swaggerUI.setup(swaggerDocs));
+const swaggerDocs = require('../../doc/swagger.json');
+router.use('/api/v1/doc/', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 
 // ROUTES
 router.get('/api/v1/:model', handleGetAll);

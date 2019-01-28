@@ -13,11 +13,11 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  "host": "localhost:3000",
+  "host": "localhost:4001/api/v1",
   "basePath": "/",
   "tags": [
     {
-      "name": "category",
+      "name": "categories",
       "description": "request",
       "externalDocs": {
         "description": "Find out more",
@@ -25,7 +25,7 @@
       }
     },
     {
-      "name": "product",
+      "name": "products",
       "description": "requests"
     }
   ],
@@ -33,12 +33,12 @@
     "http"
   ],
   "paths": {
-    "/category": {
+    "/categories": {
       "get": {
         "tags": [
-          "category"
+          "categories"
         ],
-        "summary": "Find product by id",
+        "summary": "Find products by id",
         "operationId": "getOrderById",
         "produces": [
           "application/xml",
@@ -71,7 +71,7 @@
       },
       "post": {
         "tags": [
-          "product"
+          "products"
         ],
         "produces": [
           "application/xml",
@@ -97,12 +97,12 @@
         }
       }
     },
-    "/category/{id}": {
+    "/categories/{id}": {
       "put": {
         "tags": [
-          "category"
+          "categories"
         ],
-        "summary": "Updated product",
+        "summary": "Updated products",
         "produces": [
           "application/xml",
           "application/json"
@@ -134,7 +134,7 @@
       },
       "delete": {
         "tags": [
-          "category"
+          "categories"
         ],
         "summary": "Delete food",
         "produces": [
@@ -159,12 +159,12 @@
         }
       }
     },
-    "/product": {
+    "/products": {
       "get": {
         "tags": [
-          "product"
+          "products"
         ],
-        "summary": "Find product by id",
+        "summary": "Find products by id",
         "operationId": "getCategoryById",
         "produces": [
           "application/xml",
@@ -197,7 +197,7 @@
       },
       "post": {
         "tags": [
-          "category"
+          "categories"
         ],
         "produces": [
           "application/xml",
@@ -224,12 +224,12 @@
       }
     },
     "/user/logout": {},
-    "/product/{id}": {
+    "/products/{id}": {
       "put": {
         "tags": [
-          "product"
+          "products"
         ],
-        "summary": "Updated product",
+        "summary": "Updated products",
         "produces": [
           "application/xml",
           "application/json"
@@ -261,7 +261,7 @@
       },
       "delete": {
         "tags": [
-          "product"
+          "products"
         ],
         "summary": "Delete food",
         "produces": [
@@ -335,7 +335,7 @@
         "name": {
           "type": "string"
         },
-        "category": {
+        "categories": {
           "type": "string"
         },
         "display_name": {
