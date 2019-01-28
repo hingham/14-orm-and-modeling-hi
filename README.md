@@ -1,6 +1,5 @@
 
-#### Links
-Repo: https://github.com/hingham/13-rest-server-hi
+
 
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
@@ -10,7 +9,7 @@ Repo: https://github.com/hingham/13-rest-server-hi
 ### Author: Hannah Ingham
 
 ### Links and Resources
-* [repo](https://github.com/hingham/14-orm-and-modeling-hi/pull/1)
+* [repo](https://github.com/hingham/14-orm-and-modeling-hi)
 * [![Build Status](https://www.travis-ci.com/hingham/14-orm-and-modeling.svg?branch=master)](https://www.travis-ci.com/hingham/14-orm-and-modeling)
 * [Travis link](https://www.travis-ci.com/hingham/14-orm-and-modeling)
 * [back-end](https://dashboard.heroku.com/apps/api-hannah/resources)
