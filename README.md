@@ -12,7 +12,7 @@
 * [repo](https://github.com/hingham/14-orm-and-modeling-hi)
 * [![Build Status](https://www.travis-ci.com/hingham/14-orm-and-modeling.svg?branch=master)](https://www.travis-ci.com/hingham/14-orm-and-modeling)
 * [Travis link](https://www.travis-ci.com/hingham/14-orm-and-modeling)
-* [back-end](https://dashboard.heroku.com/apps/api-hannah/resources)
+* [back-end](https://api-hannah.herokuapp.com/)
 
 #### Documentation
 * [swagger](https://api-hannah.herokuapp.com/doc)
