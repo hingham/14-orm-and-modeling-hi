@@ -3,14 +3,13 @@
 const express = require('express');
 const modelFinder = require('../models/model-finder.js')
 const router = express.Router();
-
+const swaggerUI = require('swagger-ui-express');
 router.param('model', modelFinder);
-// router.param('model', ()=>{
-//   console.log('in router.param');
-// });
 
 
-console.log('in v1');
+const swaggerDocs = require('../doc/swagger.json');
+router.use('/api/v1/:model/:id', swaggerUI.server, swaggerUI.setup(swaggerDocs));
+
 // ROUTES
 router.get('/api/v1/:model', handleGetAll);
 router.post('/api/v1/:model', handlePost);
@@ -19,10 +18,12 @@ router.get('/api/v1/:model/:id', handelGetOne);
 router.put('/api/v1/:model/:id', handlePut);
 router.delete('/api/v1/:model/:id', handleDelete);
 
+
+
 // FUNCTIONS
 /**
  *
- *
+ * @description function that takes in req, res, next
  * @param {*} request
  * @param {*} response
  * @param {*} next
